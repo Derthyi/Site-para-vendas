@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoreWay</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #3615fa;
+            text-align: center;
+            position: relative;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #fff;
+            margin: 0;
+            font-size: 3em;
+            flex: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .tagline {
+            color: #fff;
+            font-size: 1.2em;
+            margin-right: auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .subscribe-button {
+            background-color: #ff0000; /* Alterada para vermelho */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            text-decoration: none; /* Remover linha sublinhada */
+        }
+
+        .subscribe-button:hover {
+            background-color: #cc0000; /* Alterada para uma tonalidade mais escura de vermelho no hover */
+        }
+
+        .store-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .product {
+            text-align: center;
+            width: 30%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .caption {
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .buy-button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 50px; /* Margem adicionada */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <span class="tagline">Compre e apoie o Canal!</span>
+        <h1>StoreWay</h1>
+        <a href="https://www.youtube.com/channel/UCvUxf9HZi8e55HyXY_lTcgQ" target="_blank" class="subscribe-button">Inscreva-se no Canal!</a>
+    </header>
+
+    <img class="store-image" src="./Captura de tela 2023-12-04 180717.png" alt="Imagem da loja">
+
+    <section>
+        <div class="product-container">
+            <div class="product">
+                <a href="https://www.mercadolivre.com.br/nintendo-switch-oled-64gb-standard-cor-branco-e-preto/p/MLB18537259?pdp_filters=category:MLB11172#searchVariation=MLB18537259&position=2&search_layout=grid&type=product&tracking_id=a6b4c04c-1a8c-443f-938c-d38d157d0679">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_625423-MLA47920375564_102021-F.webp" alt="Nintendo Switch Oled Branco">
+                </a>
+                <p class="caption">Nintendo Switch Oled Branco</p>
+                <a href="https://www.mercadolivre.com.br/nintendo-switch-oled-64gb-standard-cor-branco-e-preto/p/MLB18537259?pdp_filters=category:MLB11172#searchVariation=MLB18537259&position=2&search_layout=grid&type=product&tracking_id=a6b4c04c-1a8c-443f-938c-d38d157d0679&gid=1&pid=1" class="buy-button">Comprar</a>
+            </div>
+
+            <div class="product">
+                <a href="https://www.mercadolivre.com.br/nintendo-new-3ds-xl-standard-cor-preto-metalico/p/MLB6252358?pdp_filters=category:MLB11172#searchVariation=MLB6252358&position=1&search_layout=grid&type=product&tracking_id=6e6553a9-e8a0-4ac2-b76a-cf0c66c41554">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_709485-MLA32736049767_112019-F.webp" alt="New Nintendo 3DS XL Preto Metalico">
+                </a>
+                <p class="caption">New Nintendo 3DS XL Preto Metalico</p>
+                <a href="https://www.mercadolivre.com.br/nintendo-new-3ds-xl-standard-cor-preto-metalico/p/MLB6252358?pdp_filters=category:MLB11172#searchVariation=MLB6252358&position=1&search_layout=grid&type=product&tracking_id=6e6553a9-e8a0-4ac2-b76a-cf0c66c41554" class="buy-button">Comprar</a>
+            </div>
+
+            <div class="product">
+                <a href="https://www.mercadolivre.com.br/console-nintendo-switch-joy-con-mario-kart-8-deluxe/p/MLB27769910?pdp_filters=category:MLB1144#searchVariation=MLB27769910&position=7&search_layout=grid&type=product&tracking_id=a52ef09a-d65d-4ff5-a33c-e9a6dd9e4b39">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_677954-MLU72225573616_102023-F.webp" alt="Nintendo swtch Edição Mario Kart 8">
+                </a>
+                <p class="caption">Nintendo swtch Edição Mario Kart 8</p>
+                <a href="https://www.mercadolivre.com.br/console-nintendo-switch-joy-con-mario-kart-8-deluxe/p/MLB27769910?pdp_filters=category:MLB1144#searchVariation=MLB27769910&position=7&search_layout=grid&type=product&tracking_id=a52ef09a-d65d-4ff5-a33c-e9a6dd9e4b39" class="buy-button">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            &copy; 2023 StoreWay. Todos os direitos reservados. | Criado por Arthur Diniz
+        </div>
+    </footer>
+
+</body>
+
+</html>
